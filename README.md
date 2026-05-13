@@ -1,73 +1,100 @@
-#  Calculator React + TypeScript + Vite
+# 🧮 React Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern calculator built with React, TypeScript and Math.js.
 
-Currently, two official plugins are available:
+This project was created to practice component architecture, state management and mathematical expression parsing using React + Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Basic arithmetic operations
+- Parentheses support
+- Power operations
+- Square root
+- Factorial
+- π constant
+- Logarithms:
+  - log
+  - log10
+  - log2
+- Equation history
+- Responsive keypad layout
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- Bootstrap 5
+- Math.js
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📸 Preview
+
+![Calculator Preview](./preview.png)
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/TU-USUARIO/calculator-react.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Enter the project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd calculator-react
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📂 Project Structure
+
+```txt
+src/
+├── components/
+│   └── KeypadView.tsx
+├── model/
+│   └── Equation.ts
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+## 🎯 Learning Goals
+
+This project helped me practice:
+
+- React component communication
+- State management with hooks
+- Mathematical expression parsing
+- TypeScript typing
+- UI composition with Bootstrap
+
+---
+
+## 👨‍💻 Author
+
+Roberto Laiton
+
+Backend developer focused on Laravel and modern web technologies.
